@@ -442,34 +442,6 @@ export default function Join() {
           </button>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8 sm:py-12">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="flex flex-col md:flex-row justify-between mb-6 sm:mb-8">
-            <div>
-              <h3 className="text-xl sm:text-2xl font-extrabold mb-4">서울다락</h3>
-              <ul className="space-y-2">
-                <li><Link href="/organization" className="hover:text-gray-300 text-base sm:text-lg font-bold">함께하는 사람들</Link></li>
-                <li><Link href="/privacy" className="hover:text-gray-300 text-base sm:text-lg font-bold">개인정보처리방침</Link></li>
-                <li><Link href="/terms" className="hover:text-gray-300 text-base sm:text-lg font-bold">이용약관</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl sm:text-2xl font-extrabold mb-4 mt-6 md:mt-0">소셜 미디어</h3>
-              <div className="flex flex-wrap gap-4 sm:gap-6">
-                <Link href="#" className="hover:text-gray-300 text-base sm:text-lg font-bold">Facebook</Link>
-                <Link href="https://www.instagram.com/seouldarak/" className="hover:text-gray-300 text-base sm:text-lg font-bold">Instagram</Link>
-                <Link href="#" className="hover:text-gray-300 text-base sm:text-lg font-bold">Youtube</Link>
-                <Link href="#" className="hover:text-gray-300 text-base sm:text-lg font-bold">Blog</Link>
-              </div>
-            </div>
-          </div>
-          <div className="pt-6 sm:pt-8 border-t border-gray-800">
-            <p className="text-base sm:text-lg font-bold text-center">© 2025 서울다락. All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 } 
