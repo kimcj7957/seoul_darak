@@ -2,12 +2,6 @@
   "name": "seoul_darak",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
     "next": "15.2.4",
     "nodemailer": "^6.10.0",
@@ -17,5 +11,11 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"
+  },
+  "homepage": "https://kimcj4567.github.io/seoul_darak/",
+  "scripts": {
+    "build": "next build && next export",
+    "predeploy": "npm run build",
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   }
 }
