@@ -1,5 +1,6 @@
 import { Nanum_Gothic } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const nanumGothic = Nanum_Gothic({
   weight: ['400', '700', '800'],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         className={`${nanumGothic.variable} font-sans antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
