@@ -67,7 +67,7 @@ export default function Join() {
       {/* Navigation Bar */}
       <nav className="absolute top-0 left-0 right-0 z-50 bg-white shadow-md px-4 sm:px-6 lg:px-8 py-4">
         <div className="container mx-auto flex items-center">
-          <div className="font-bold text-xl sm:text-2xl text-[#17171B] mr-auto">서울다락</div>
+          <Link href="/" className="font-bold text-xl sm:text-2xl text-[#17171B] mr-auto hover:text-gray-500">서울다락</Link>
           
           {/* 모바일 메뉴 버튼 */}
           <div className="lg:hidden">
