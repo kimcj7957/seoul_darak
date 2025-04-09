@@ -3,9 +3,11 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    domains: ['kimcj7957.github.io'],
   },
-  basePath: '/seoul_darak', // GitHub 저장소 이름
-  assetPrefix: '/seoul_darak/', // GitHub 저장소 이름
+  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://kimcj7957.github.io/seoul_darak' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/seoul_darak' : '',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig 
