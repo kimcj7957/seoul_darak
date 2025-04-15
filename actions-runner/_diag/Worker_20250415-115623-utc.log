@@ -1592,3 +1592,1626 @@
 [2025-04-15 11:56:30Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
 [2025-04-15 11:56:30Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/upload-artifact/tarball/ea165f8d65b6e75b540449e92b4886f43607fa02' into /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_04deb45d-e99d-4020-90dd-7dbcb2db48ba/8febb7f5-5922-48b0-bb47-f91cd37548be.tar.gz.
 [2025-04-15 11:56:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7aba8a2a-af03-490f-9522-f4d4f2b36c3d', success rate: 1/1.
+[2025-04-15 11:56:31Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/upload-artifact/tarball/ea165f8d65b6e75b540449e92b4886f43607fa02 X-GitHub-Request-Id: F837:5EEC2:1CAEA:15E2EA:67FE496E Http Status: OK
+[2025-04-15 11:56:31Z INFO ActionManager] Which2: 'tar'
+[2025-04-15 11:56:31Z INFO ActionManager] Location: '/usr/bin/tar'
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_04deb45d-e99d-4020-90dd-7dbcb2db48ba/8febb7f5-5922-48b0-bb47-f91cd37548be.tar.gz"'
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper]   Working directory: '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_04deb45d-e99d-4020-90dd-7dbcb2db48ba/_staging'
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper] Process started with process id 89111, waiting for process exit.
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:31Z INFO ProcessInvokerWrapper] Finished process 89111 with exit code 0, and elapsed time 00:00:00.0989724.
+[2025-04-15 11:56:31Z INFO ActionManager] Finished getting action repository.
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-15 11:56:31Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManager] Load action that reference repository from '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/actions/checkout/v4'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "ssh-user"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 14,
+          "lit": "git"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 52,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 54,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 57,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 77,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 80,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 95,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 97,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 98,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-15 11:56:31Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-04-15 11:56:31Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-04-15 11:56:31Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Ignore action property author.
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 3,
+          "lit": "mirror"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 30,
+          "col": 3,
+          "lit": "mirror-token"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-15 11:56:31Z INFO ActionManager] Action node.js file: dist/setup/index.js, no more preparation.
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManager] Load action that reference repository from '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/actions/setup-node/v4'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Ignore action property author.
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 28,
+          "col": 3,
+          "lit": "mirror"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 30,
+          "col": 3,
+          "lit": "mirror-token"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-15 11:56:31Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-04-15 11:56:31Z INFO ActionManager] Action node.js file: dist/setup/index.js.
+[2025-04-15 11:56:31Z INFO ActionManager] Action post node.js file: dist/cache-save/index.js.
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Ignore action property author.
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Configure GitHub Pages",
+  "description": "A GitHub Action to enable Pages, extract various metadata about a site, and configure some supported static site generators.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 8,
+          "col": 3,
+          "lit": "static_site_generator"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 11,
+          "col": 3,
+          "lit": "generator_config_file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 14,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 4,
+          "line": 16,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 18,
+          "col": 3,
+          "lit": "enablement"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 20,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": null,
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-15 11:56:31Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManager] Load action that reference repository from '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/actions/configure-pages/v5'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Ignore action property author.
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Configure GitHub Pages",
+  "description": "A GitHub Action to enable Pages, extract various metadata about a site, and configure some supported static site generators.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 8,
+          "col": 3,
+          "lit": "static_site_generator"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 11,
+          "col": 3,
+          "lit": "generator_config_file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 14,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 4,
+          "line": 16,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 4,
+          "line": 18,
+          "col": 3,
+          "lit": "enablement"
+        },
+        "value": {
+          "type": 0,
+          "file": 4,
+          "line": 20,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": false,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": null,
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-15 11:56:31Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-04-15 11:56:31Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-04-15 11:56:31Z INFO ActionManager] Action post node.js file: N/A.
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:31Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Ignore action property author.
+[2025-04-15 11:56:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Upload GitHub Pages artifact",
+  "description": "A composite action that prepares your static assets to be deployed to GitHub Pages",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 5,
+          "line": 5,
+          "col": 3,
+          "lit": "name"
+        },
+        "value": {
+          "type": 0,
+          "file": 5,
+          "line": 8,
+          "col": 14,
+          "lit": "github-pages"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 5,
+          "line": 9,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": {
+          "type": 0,
+          "file": 5,
+          "line": 12,
+          "col": 14,
+          "lit": "_site/"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 5,
+          "line": 13,
+          "col": 3,
+          "lit": "retention-days"
+        },
+        "value": {
+          "type": 0,
+          "file": 5,
+          "line": 16,
+          "col": 14,
+          "lit": "1"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "composite",
+    "hasPre": false,
+    "hasPost": false,
+    "preSteps": [],
+    "steps": [
+      {
+        "type": "action",
+        "reference": {
+          "type": "script"
+        },
+        "displayNameToken": {
+          "type": 0,
+          "file": 5,
+          "line": 20,
+          "col": 13,
+          "lit": "Archive artifact"
+        },
+        "contextName": "__run",
+        "environment": {
+          "type": 2,
+          "file": 5,
+          "line": 32,
+          "col": 9,
+          "map": [
+            {
+              "key": {
+                "type": 0,
+                "file": 5,
+                "line": 32,
+                "col": 9,
+                "lit": "INPUT_PATH"
+              },
+              "value": {
+                "type": 3,
+                "file": 5,
+                "line": 32,
+                "col": 21,
+                "expr": "inputs.path"
+              }
+            }
+          ]
+        },
+        "inputs": {
+          "type": 2,
+          "map": [
+            {
+              "key": "script",
+              "value": {
+                "type": 0,
+                "file": 5,
+                "line": 23,
+                "col": 12,
+                "lit": "tar \\\n  --dereference --hard-dereference \\\n  --directory \"$INPUT_PATH\" \\\n  -cvf \"$RUNNER_TEMP/artifact.tar\" \\\n  --exclude=.git \\\n  --exclude=.github \\\n  .\n"
+              }
+            },
+            {
+              "key": "shell",
+              "value": {
+                "type": 0,
+                "file": 5,
+                "line": 21,
+                "col": 14,
+                "lit": "sh"
+              }
+            }
+          ]
+        },
+        "condition": "success() && (runner.os == 'Linux')"
+      },
+      {
+        "type": "action",
+        "reference": {
+          "type": "script"
+        },
+        "displayNameToken": {
+          "type": 0,
+          "file": 5,
+          "line": 35,
+          "col": 13,
+          "lit": "Archive artifact"
+        },
+        "contextName": "__run_2",
+        "environment": {
+          "type": 2,
+          "file": 5,
+          "line": 47,
+          "col": 9,
+          "map": [
+            {
+              "key": {
+                "type": 0,
+                "file": 5,
+                "line": 47,
+                "col": 9,
+                "lit": "INPUT_PATH"
+              },
+              "value": {
+                "type": 3,
+                "file": 5,
+                "line": 47,
+                "col": 21,
+                "expr": "inputs.path"
+              }
+            }
+          ]
+        },
+        "inputs": {
+          "type": 2,
+          "map": [
+            {
+              "key": "script",
+              "value": {
+                "type": 0,
+                "file": 5,
+                "line": 38,
+                "col": 12,
+                "lit": "gtar \\\n  --dereference --hard-dereference \\\n  --directory \"$INPUT_PATH\" \\\n  -cvf \"$RUNNER_TEMP/artifact.tar\" \\\n  --exclude=.git \\\n  --exclude=.github \\\n  .\n"
+              }
+            },
+            {
+              "key": "shell",
+              "value": {
+                "type": 0,
+                "file": 5,
+                "line": 36,
+                "col": 14,
+                "lit": "sh"
+              }
+            }
+          ]
+        },
+        "condition": "success() && (runner.os == 'macOS')"
+      },
+      {
+        "type": "action",
+        "reference": {
+          "type": "script"
+        },
+        "displayNameToken": {
+          "type": 0,
+          "file": 5,
+          "line": 50,
+          "col": 13,
+          "lit": "Archive artifact"
+        },
+        "contextName": "__run_3",
+        "environment": {
+          "type": 2,
+          "file": 5,
+          "line": 63,
+          "col": 9,
+          "map": [
+            {
+              "key": {
+                "type": 0,
+                "file": 5,
+                "line": 63,
+                "col": 9,
+                "lit": "INPUT_PATH"
+              },
+              "value": {
+                "type": 3,
+                "file": 5,
+                "line": 63,
+                "col": 21,
+                "expr": "inputs.path"
+              }
+            }
+          ]
+        },
+        "inputs": {
+          "type": 2,
+          "map": [
+            {
+              "key": "script",
+              "value": {
+                "type": 0,
+                "file": 5,
+                "line": 53,
+                "col": 12,
+                "lit": "tar \\\n  --dereference --hard-dereference \\\n  --directory \"$INPUT_PATH\" \\\n  -cvf \"$RUNNER_TEMP\\artifact.tar\" \\\n  --exclude=.git \\\n  --exclude=.github \\\n  --force-local \\\n  \".\"\n"
+              }
+            },
+            {
+              "key": "shell",
+              "value": {
+                "type": 0,
+                "file": 5,
+                "line": 51,
+                "col": 14,
+                "lit": "bash"
+              }
+            }
+          ]
+        },
+        "condition": "success() && (runner.os == 'Windows')"
+      },
+      {
+        "type": "action",
+        "reference": {
+          "type": "repository",
+          "name": "actions/upload-artifact",
+          "ref": "v3",
+          "repositoryType": "GitHub",
+          "path": ""
+        },
+        "displayNameToken": {
+          "type": 0,
+          "file": 5,
+          "line": 65,
+          "col": 13,
+          "lit": "Upload artifact"
+        },
+        "contextName": "__actions_upload-artifact",
+        "inputs": {
+          "type": 2,
+          "file": 5,
+          "line": 68,
+          "col": 9,
+          "map": [
+            {
+              "key": {
+                "type": 0,
+                "file": 5,
+                "line": 68,
+                "col": 9,
+                "lit": "name"
+              },
+              "value": {
+                "type": 3,
+                "file": 5,
+                "line": 68,
+                "col": 15,
+                "expr": "inputs.name"
+              }
+            },
+            {
+              "key": {
+                "type": 0,
+                "file": 5,
+                "line": 69,
+                "col": 9,
+                "lit": "path"
+              },
+              "value": {
+                "type": 3,
+                "file": 5,
+                "line": 69,
+                "col": 15,
+                "expr": "format('{0}/artifact.tar', runner.temp)"
+              }
+            },
+            {
+              "key": {
+                "type": 0,
+                "file": 5,
+                "line": 70,
+                "col": 9,
+                "lit": "retention-days"
+              },
+              "value": {
+                "type": 3,
+                "file": 5,
+                "line": 70,
+                "col": 25,
+                "expr": "inputs.retention-days"
+              }
+            },
+            {
+              "key": {
+                "type": 0,
+                "file": 5,
+                "line": 71,
+                "col": 9,
+                "lit": "if-no-files-found"
+              },
+              "value": {
+                "type": 0,
+                "file": 5,
+                "line": 71,
+                "col": 28,
+                "lit": "error"
+              }
+            }
+          ]
+        },
+        "condition": "success()"
+      }
+    ],
+    "postSteps": [],
+    "outputs": null,
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-15 11:56:31Z INFO ActionManager] Loading Composite steps
+[2025-04-15 11:56:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7aba8a2a-af03-490f-9522-f4d4f2b36c3d', success rate: 1/1.
+[2025-04-15 11:56:32Z ERR  GitHubActionsService] POST request to https://launch.actions.githubusercontent.com/actions/build/1a09f335-f1c7-460d-8781-00a70b17cddf/jobs/5e4232d2-446c-59ac-9835-c4ecb4037c9e/runnerresolve/actions failed. HTTP Status: UnprocessableEntity
+[2025-04-15 11:56:32Z ERR  JobExtension] Caught exception from JobExtension Initialization: System.Exception: Missing download info for actions/upload-artifact@v3
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps, Guid rootStepId)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+[2025-04-15 11:56:32Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "7aba8a2a-af03-490f-9522-f4d4f2b36c3d",
+  "result": "failed",
+  "errorMessages": [
+    "Missing download info for actions/upload-artifact@v3"
+  ],
+  "executionTimeInSeconds": 8,
+  "startTime": "2025-04-15T11:56:24.862258Z",
+  "finishTime": "2025-04-15T11:56:32.832123Z"
+}.
+[2025-04-15 11:56:32Z ERR  JobRunner] Job initialize failed.
+[2025-04-15 11:56:32Z ERR  JobRunner] Caught exception from InitializeJob: System.Exception: Missing download info for actions/upload-artifact@v3
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps, Guid rootStepId)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+   at GitHub.Runner.Worker.JobRunner.RunAsync(AgentJobRequestMessage message, CancellationToken jobRequestCancellationToken)
+[2025-04-15 11:56:32Z INFO JobRunner] Shutting down the job server queue.
+[2025-04-15 11:56:32Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-04-15 11:56:33Z INFO JobServerQueue] All queue process task stopped.
+[2025-04-15 11:56:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7aba8a2a-af03-490f-9522-f4d4f2b36c3d', success rate: 1/1.
+[2025-04-15 11:56:33Z INFO JobServerQueue] Web console line queue drained.
+[2025-04-15 11:56:33Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2025-04-15 11:56:33Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-04-15 11:56:33Z INFO JobServerQueue] File upload queue drained.
+[2025-04-15 11:56:33Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-04-15 11:56:33Z INFO JobServerQueue] Uploading 2 file(s) in one shot through results service.
+[2025-04-15 11:56:33Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-04-15 11:56:33Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_diag/blocks/1a09f335-f1c7-460d-8781-00a70b17cddf_7aba8a2a-af03-490f-9522-f4d4f2b36c3d.1
+[2025-04-15 11:56:35Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-04-15 11:56:35Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_diag/blocks/1a09f335-f1c7-460d-8781-00a70b17cddf_5e4232d2-446c-59ac-9835-c4ecb4037c9e.1
+[2025-04-15 11:56:35Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-04-15 11:56:35Z INFO JobServerQueue] Results upload queue drained.
+[2025-04-15 11:56:36Z INFO JobServerQueue] Timeline update queue drained.
+[2025-04-15 11:56:36Z INFO JobServerQueue] Disposing job server ...
+[2025-04-15 11:56:36Z INFO JobServerQueue] Disposing results server ...
+[2025-04-15 11:56:36Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-04-15 11:56:36Z INFO TempDirectoryManager] Cleaning runner temp folder: /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_temp
+[2025-04-15 11:56:36Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:36Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:36Z INFO HostContext] Well known directory 'Diag': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_diag'
+[2025-04-15 11:56:36Z INFO HostContext] Well known config file 'Telemetry': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_diag/.telemetry'
+[2025-04-15 11:56:36Z INFO JobRunner] Raising job completed against run service
+[2025-04-15 11:56:36Z INFO Worker] Job completed.

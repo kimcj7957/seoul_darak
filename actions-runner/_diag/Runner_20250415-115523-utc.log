@@ -154,3 +154,14 @@
 [2025-04-15 11:56:22Z INFO ProcessChannel] Sending message of length 22313, with hash 'a9998c3f144872ba94d3f28af2a3f298decea1023ff84cdea155e085ff7bf5eb'
 [2025-04-15 11:56:22Z INFO JobNotification] Entering JobStarted Notification
 [2025-04-15 11:56:22Z INFO JobNotification] Entering StartMonitor
+[2025-04-15 11:56:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:36Z INFO ProcessInvokerWrapper] Finished process 88937 with exit code 102, and elapsed time 00:00:14.1374982.
+[2025-04-15 11:56:36Z INFO JobDispatcher] Worker finished for job 5e4232d2-446c-59ac-9835-c4ecb4037c9e. Code: 102
+[2025-04-15 11:56:36Z INFO JobDispatcher] finish job request for job 5e4232d2-446c-59ac-9835-c4ecb4037c9e with result: Failed
+[2025-04-15 11:56:36Z INFO Terminal] WRITE LINE: 2025-04-15 11:56:36Z: Job build completed with result: Failed
+[2025-04-15 11:56:36Z INFO JobDispatcher] Stop renew job request for job 5e4232d2-446c-59ac-9835-c4ecb4037c9e.
+[2025-04-15 11:56:36Z INFO JobDispatcher] job renew has been cancelled, stop renew job 5e4232d2-446c-59ac-9835-c4ecb4037c9e.
+[2025-04-15 11:56:36Z INFO JobNotification] Entering JobCompleted Notification
+[2025-04-15 11:56:36Z INFO JobNotification] Entering EndMonitor
+[2025-04-15 11:56:36Z INFO MessageListener] Received job status event. JobState: Online
