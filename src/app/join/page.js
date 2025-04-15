@@ -77,10 +77,11 @@ export default function Join() {
         <div className="container mx-auto px-4 sm:px-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 md:mb-8 max-w-3xl leading-tight text-black">
             서울다락 <span className="text-[#A5D6A7]">조합원</span>이 되어<br />
+            <br/>
             지역 사회의 변화를 함께 만들어가요
           </h1>
           <p className="text-xl sm:text-2xl mb-8 max-w-2xl font-bold text-black">
-            조합원이 되시면 서울다락의 다양한 활동에 참여하고<br className="md:hidden" />
+            조합원이 되시면 서울다락의 다양한 활동에 참여하고 <br className="md:hidden" />
             지역 사회의 발전에 기여하실 수 있습니다.
           </p>
         </div>

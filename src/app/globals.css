@@ -11,11 +11,12 @@
     --primary-dark: #81C784;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: #0a0a0a;
-      --foreground: #ededed;
-    }
+  .dark {
+    --background: #17171B;
+    --foreground: #ffffff;
+    --primary: #A5D6A7;
+    --primary-light: #E8F5E9;
+    --primary-dark: #81C784;
   }
 }
 
@@ -92,4 +93,58 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
   word-break: keep-all;
   line-height: 1.6;
+}
+
+/* 다크모드 스타일 */
+.dark {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.dark .bg-white {
+  background-color: var(--background);
+}
+
+.dark .text-black {
+  color: var(--foreground);
+}
+
+.dark .bg-gray-50 {
+  background-color: #1E1E24;
+}
+
+.dark .bg-gray-100 {
+  background-color: #2A2A32;
+}
+
+.dark .text-gray-600 {
+  color: #A0A0A0;
+}
+
+.dark .text-gray-700 {
+  color: #B0B0B0;
+}
+
+.dark .border-gray-200 {
+  border-color: #2A2A32;
+}
+
+.dark .bg-[#E8F5E9] {
+  background-color: #1E1E24;
+}
+
+.dark .bg-[#E8F5E9]/98 {
+  background-color: rgba(30, 30, 36, 0.98);
+}
+
+.dark .bg-[#E8F5E9]/20 {
+  background-color: rgba(30, 30, 36, 0.2);
+}
+
+.dark .hover\:bg-gray-100:hover {
+  background-color: #2A2A32;
+}
+
+.dark .hover\:text-gray-500:hover {
+  color: #A0A0A0;
 }

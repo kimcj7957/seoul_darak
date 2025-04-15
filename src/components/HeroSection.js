@@ -10,7 +10,7 @@ export default function HeroSection() {
               서울다락
             </h1>
             <p className="text-lg xs:text-xl sm:text-2xl mb-3 xs:mb-4 sm:mb-6 font-bold text-black">
-              지역 중심의 협동조합으로<br className="md:hidden" />
+              지역 중심의 협동조합으로 <br className="md:hidden" />
               함께 성장하는 마을 공동체
             </p>
             <p className="text-sm xs:text-base sm:text-lg mb-6 xs:mb-8 sm:mb-10 text-gray-600">
