@@ -27,7 +27,7 @@ export default function Organization() {
               className="text-[#17171B] focus:outline-none p-3 touch-manipulation cursor-pointer"
               style={{touchAction: 'manipulation'}}
               type="button"
-              aria-label="메뉴 열기/닫기"
+              aria-label="메뉴 열기 / 닫기"
             >
               <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 {mobileMenuOpen ? (
