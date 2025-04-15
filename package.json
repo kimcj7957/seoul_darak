@@ -20,9 +20,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
+    "file-loader": "^6.2.0",
     "gh-pages": "^6.3.0",
     "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "url-loader": "^4.1.1"
   },
   "homepage": "https://kimcj7957.github.io/seoul_darak/"
 }
