@@ -8,11 +8,6 @@ const nextConfig = {
   assetPrefix: process.env.NODE_ENV === 'production' ? 'https://seouldarak.site' : '',
   basePath: process.env.NODE_ENV === 'production' ? '' : '',
   trailingSlash: true,
-  experimental: {
-    images: {
-      unoptimized: true,
-    },
-  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
