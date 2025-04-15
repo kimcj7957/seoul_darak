@@ -46,4 +46,9 @@ jobs:
           folder: out
           clean: true
           clean-exclude: |
-            CNAME 
+            CNAME
+      - name: Verify domain
+        run: |
+          echo "Verifying domain configuration..."
+          nslookup seouldarak.site
+          nslookup www.seouldarak.site 
