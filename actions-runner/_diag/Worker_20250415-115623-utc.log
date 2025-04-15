@@ -1,0 +1,1594 @@
+[2025-04-15 11:56:23Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:23Z INFO HostContext] Well known config file 'Credentials': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.credentials'
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:23Z INFO HostContext] Well known config file 'Runner': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.runner'
+[2025-04-15 11:56:23Z INFO Worker] Version: 2.323.0
+[2025-04-15 11:56:23Z INFO Worker] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-04-15 11:56:23Z INFO Worker] Culture: en-US
+[2025-04-15 11:56:23Z INFO Worker] UI Culture: en-US
+[2025-04-15 11:56:23Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-04-15 11:56:23Z INFO ProcessChannel] Receiving message of length 22313, with hash 'a9998c3f144872ba94d3f28af2a3f298decea1023ff84cdea155e085ff7bf5eb'
+[2025-04-15 11:56:23Z INFO Worker] Message received.
+[2025-04-15 11:56:23Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/deploy.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "351d73e7-ced4-45e9-9f71-acf00a7db907",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/setup-node",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 17,
+        "col": 15,
+        "lit": "Setup Node"
+      },
+      "contextName": "__actions_setup-node",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 20,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 20,
+              "col": 11,
+              "lit": "node-version"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 20,
+              "col": 25,
+              "lit": "18"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 21,
+              "col": 11,
+              "lit": "cache"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 21,
+              "col": 18,
+              "lit": "npm"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "2ec5381d-ca72-448c-aea8-55398f1189bf",
+      "name": "__actions_setup-node"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 22,
+        "col": 15,
+        "lit": "Install dependencies"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 23,
+              "col": 14,
+              "lit": "npm install"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "9531f34a-29ad-4adf-9dca-c01e8e2919cf",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 24,
+        "col": 15,
+        "lit": "Build"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 25,
+              "col": 14,
+              "lit": "npm run build"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "844d53d0-ca0f-46ca-9621-40edb927b2a2",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/configure-pages",
+        "ref": "v5",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 26,
+        "col": 15,
+        "lit": "Setup Pages"
+      },
+      "contextName": "__actions_configure-pages",
+      "condition": "success()",
+      "id": "c7863db5-753c-423f-a98d-4deb5618407b",
+      "name": "__actions_configure-pages"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/upload-pages-artifact",
+        "ref": "v2",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 28,
+        "col": 15,
+        "lit": "Upload artifact"
+      },
+      "contextName": "__actions_upload-pages-artifact",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 31,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 31,
+              "col": 11,
+              "lit": "path"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 31,
+              "col": 17,
+              "lit": "./out"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "a1612f48-64c2-44cc-8542-40dd0c681b27",
+      "name": "__actions_upload-pages-artifact"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/upload-artifact",
+        "ref": "v4",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 32,
+        "col": 15,
+        "lit": "Upload build files"
+      },
+      "contextName": "__actions_upload-artifact",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 35,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 35,
+              "col": 11,
+              "lit": "name"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 35,
+              "col": 17,
+              "lit": "build-files"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 36,
+              "col": 11,
+              "lit": "path"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 36,
+              "col": 17,
+              "lit": "./out"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "e7b4c7d4-640b-49b6-a51d-977bd6ebf968",
+      "name": "__actions_upload-artifact"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Pages\":\"write\"}"
+    },
+    "system.orchestrationId": {
+      "value": "1a09f335-f1c7-460d-8781-00a70b17cddf.build.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "build"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "1a09f335-f1c7-460d-8781-00a70b17cddf",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "1a09f335-f1c7-460d-8781-00a70b17cddf",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "5e4232d2-446c-59ac-9835-c4ecb4037c9e",
+  "jobDisplayName": "build",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://acghubeus2.actions.githubusercontent.com/4010JCL6HN0eKEiTrumdpd2qh9q0UYK7W12QpbOq5K5Af5VvBM/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus13.actions.githubusercontent.com/4010JCL6HN0eKEiTrumdpd2qh9q0UYK7W12QpbOq5K5Af5VvBM/",
+          "GenerateIdTokenUrl": "https://run-actions-2-azure-eastus.actions.githubusercontent.com/39//idtoken/1a09f335-f1c7-460d-8781-00a70b17cddf/5e4232d2-446c-59ac-9835-c4ecb4037c9e?api-version=2.0"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-2-azure-eastus.actions.githubusercontent.com/39/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "c85970c185ba60ecb053dede4e4de2f0943c30cd"
+        },
+        {
+          "k": "repository",
+          "v": "kimcj7957/seoul_darak"
+        },
+        {
+          "k": "repository_owner",
+          "v": "kimcj7957"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "146522952"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/kimcj7957/seoul_darak.git"
+        },
+        {
+          "k": "run_id",
+          "v": "14468776915"
+        },
+        {
+          "k": "run_number",
+          "v": "19"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "146522952"
+        },
+        {
+          "k": "actor",
+          "v": "kimcj7957"
+        },
+        {
+          "k": "workflow",
+          "v": "Deploy to GitHub Pages"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "c85970c185ba60ecb053dede4e4de2f0943c30cd"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "b7132f1706b5775e612be708865b4a8b2969e29c"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "kimcj7957@naver.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "kimcj7957"
+                              },
+                              {
+                                "k": "username",
+                                "v": "kimcj7957"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "kimcj7957@naver.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "kimcj7957"
+                              },
+                              {
+                                "k": "username",
+                                "v": "kimcj7957"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "c85970c185ba60ecb053dede4e4de2f0943c30cd"
+                        },
+                        {
+                          "k": "message",
+                          "v": "chore: use self-hosted runner"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-04-15T20:56:15+09:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "134fdd8bbc6181a9d1e552e704ac21e7c0744a55"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/kimcj7957/seoul_darak/commit/c85970c185ba60ecb053dede4e4de2f0943c30cd"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/kimcj7957/seoul_darak/compare/b7132f1706b5...c85970c185ba"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "kimcj7957@naver.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "kimcj7957"
+                          },
+                          {
+                            "k": "username",
+                            "v": "kimcj7957"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "kimcj7957@naver.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "kimcj7957"
+                          },
+                          {
+                            "k": "username",
+                            "v": "kimcj7957"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "c85970c185ba60ecb053dede4e4de2f0943c30cd"
+                    },
+                    {
+                      "k": "message",
+                      "v": "chore: use self-hosted runner"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-04-15T20:56:15+09:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "134fdd8bbc6181a9d1e552e704ac21e7c0744a55"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/kimcj7957/seoul_darak/commit/c85970c185ba60ecb053dede4e4de2f0943c30cd"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "146522952+kimcj7957@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "kimcj7957"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/kimcj7957/seoul_darak.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1744207847.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "kimcj7957/seoul_darak"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/kimcj7957/seoul_darak.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": true
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/kimcj7957/seoul_darak"
+                    },
+                    {
+                      "k": "id",
+                      "v": 963330365.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "seoul_darak"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOOWtBPQ"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/146522952?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "146522952+kimcj7957@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/kimcj7957/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/kimcj7957/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/kimcj7957/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/kimcj7957/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/kimcj7957"
+                          },
+                          {
+                            "k": "id",
+                            "v": 146522952.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "kimcj7957"
+                          },
+                          {
+                            "k": "name",
+                            "v": "kimcj7957"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOCLvDSA"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/kimcj7957/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/kimcj7957/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/kimcj7957/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/kimcj7957/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/kimcj7957/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/kimcj7957"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1744718176.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 5812.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:kimcj7957/seoul_darak.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/kimcj7957/seoul_darak"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-04-15T11:51:45Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/kimcj7957/seoul_darak"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/146522952?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/kimcj7957/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/kimcj7957/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/kimcj7957/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/kimcj7957/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/kimcj7957"
+                    },
+                    {
+                      "k": "id",
+                      "v": 146522952.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "kimcj7957"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOCLvDSA"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/kimcj7957/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/kimcj7957/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/kimcj7957/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/kimcj7957/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/kimcj7957/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/kimcj7957"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "kimcj7957/seoul_darak/.github/workflows/deploy.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "c85970c185ba60ecb053dede4e4de2f0943c30cd"
+        },
+        {
+          "k": "repository_id",
+          "v": "963330365"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "kimcj7957"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOCLvDSA"
+}
+[2025-04-15 11:56:23Z INFO JobRunner] Job ID 5e4232d2-446c-59ac-9835-c4ecb4037c9e
+[2025-04-15 11:56:23Z INFO ConfigurationStore] currentAssemblyLocation: /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin/Runner.Worker.dll
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:23Z INFO ConfigurationStore] binPath: /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:23Z INFO ConfigurationStore] RootFolder: /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:23Z INFO HostContext] Well known config file 'Runner': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.runner'
+[2025-04-15 11:56:23Z INFO ConfigurationStore] ConfigFilePath: /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.runner
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:23Z INFO HostContext] Well known config file 'MigratedRunner': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.runner_migrated'
+[2025-04-15 11:56:23Z INFO ConfigurationStore] MigratedConfigFilePath: /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.runner_migrated
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:23Z INFO HostContext] Well known config file 'Credentials': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.credentials'
+[2025-04-15 11:56:23Z INFO ConfigurationStore] CredFilePath: /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.credentials
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:23Z INFO HostContext] Well known config file 'MigratedCredentials': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.credentials_migrated'
+[2025-04-15 11:56:23Z INFO ConfigurationStore] MigratedCredFilePath: /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.credentials_migrated
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:23Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:23Z INFO HostContext] Well known config file 'Service': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.service'
+[2025-04-15 11:56:23Z INFO ConfigurationStore] ServiceConfigFilePath: /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.service
+[2025-04-15 11:56:23Z INFO ConfigurationStore] Read setting file: 313 chars
+[2025-04-15 11:56:23Z INFO JobRunner] Initializing launch client
+[2025-04-15 11:56:23Z INFO JobServerQueue] Initializing results client
+[2025-04-15 11:56:24Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-04-15 11:56:24Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-04-15 11:56:24Z INFO JobServerQueue] Start process web console line queue.
+[2025-04-15 11:56:24Z INFO JobServerQueue] Start process file upload queue.
+[2025-04-15 11:56:24Z INFO JobServerQueue] Start results file upload queue.
+[2025-04-15 11:56:24Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-04-15 11:56:24Z INFO JobServerQueue] Start process timeline update queue.
+[2025-04-15 11:56:24Z INFO ExecutionContext] Initialize GitHub context
+[2025-04-15 11:56:24Z INFO ExecutionContext] Initialize Env context
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Diag': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_diag'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Diag': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_diag'
+[2025-04-15 11:56:24Z INFO JobRunner] Starting the job execution context.
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:24Z INFO JobRunner] Validating directory permissions for: '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Tools': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_tool'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Temp': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_temp'
+[2025-04-15 11:56:24Z INFO JobRunner] Getting job extension.
+[2025-04-15 11:56:24Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Diag': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_diag'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Diag': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_diag'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known config file 'Credentials': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.credentials'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known config file 'SetupInfo': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/.setup_info'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:24Z INFO PipelineDirectoryManager] Loading tracking config if exists: /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_PipelineMapping/kimcj7957/seoul_darak/PipelineFolder.json
+[2025-04-15 11:56:24Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:24Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:24Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:24Z INFO JobExtension] Downloading actions
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:24Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:24Z INFO Worker] Listening for cancel message from the channel.
+[2025-04-15 11:56:24Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-04-15 11:56:25Z INFO ResultServer] Successfully started websocket client.
+[2025-04-15 11:56:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7aba8a2a-af03-490f-9522-f4d4f2b36c3d', success rate: 1/1.
+[2025-04-15 11:56:25Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:26Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/11bd71901bbe5b1630ceea73d27597364c9af683' into /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_2a76f220-eda5-437b-af86-b5e75e59ff14/525297ef-c342-42a1-a0ee-c982466ea1e5.tar.gz.
+[2025-04-15 11:56:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7aba8a2a-af03-490f-9522-f4d4f2b36c3d', success rate: 1/1.
+[2025-04-15 11:56:26Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/tarball/11bd71901bbe5b1630ceea73d27597364c9af683 X-GitHub-Request-Id: F826:32EC93:1D3E6:14250B:67FE496A Http Status: OK
+[2025-04-15 11:56:26Z INFO ActionManager] Which2: 'tar'
+[2025-04-15 11:56:26Z INFO ActionManager] Location: '/usr/bin/tar'
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_2a76f220-eda5-437b-af86-b5e75e59ff14/525297ef-c342-42a1-a0ee-c982466ea1e5.tar.gz"'
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper]   Working directory: '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_2a76f220-eda5-437b-af86-b5e75e59ff14/_staging'
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper] Process started with process id 88962, waiting for process exit.
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:26Z INFO ProcessInvokerWrapper] Finished process 88962 with exit code 0, and elapsed time 00:00:00.1863934.
+[2025-04-15 11:56:26Z INFO ActionManager] Finished getting action repository.
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:26Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:26Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/setup-node/tarball/49933ea5288caeca8642d1e84afbd3f7d6820020' into /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_dd2b962e-1579-408c-9302-fce0e12c61af/60e9f8b0-ee8e-48be-968f-b019ea2d1a34.tar.gz.
+[2025-04-15 11:56:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7aba8a2a-af03-490f-9522-f4d4f2b36c3d', success rate: 1/1.
+[2025-04-15 11:56:29Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/setup-node/tarball/49933ea5288caeca8642d1e84afbd3f7d6820020 X-GitHub-Request-Id: F829:1B3DE7:CD8F:8F873:67FE496B Http Status: OK
+[2025-04-15 11:56:29Z INFO ActionManager] Which2: 'tar'
+[2025-04-15 11:56:29Z INFO ActionManager] Location: '/usr/bin/tar'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_dd2b962e-1579-408c-9302-fce0e12c61af/60e9f8b0-ee8e-48be-968f-b019ea2d1a34.tar.gz"'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Working directory: '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_dd2b962e-1579-408c-9302-fce0e12c61af/_staging'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper] Process started with process id 89078, waiting for process exit.
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper] Finished process 89078 with exit code 0, and elapsed time 00:00:00.0718335.
+[2025-04-15 11:56:29Z INFO ActionManager] Finished getting action repository.
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:29Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/configure-pages/tarball/983d7736d9b0ae728b81ab479565c72886d7745b' into /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_585b3713-9750-46bd-9295-c2a1dc3db35b/491240b2-2588-41bf-94e9-bc18b640c043.tar.gz.
+[2025-04-15 11:56:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7aba8a2a-af03-490f-9522-f4d4f2b36c3d', success rate: 1/1.
+[2025-04-15 11:56:29Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/configure-pages/tarball/983d7736d9b0ae728b81ab479565c72886d7745b X-GitHub-Request-Id: F833:284180:1CE39:15E693:67FE496D Http Status: OK
+[2025-04-15 11:56:29Z INFO ActionManager] Which2: 'tar'
+[2025-04-15 11:56:29Z INFO ActionManager] Location: '/usr/bin/tar'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_585b3713-9750-46bd-9295-c2a1dc3db35b/491240b2-2588-41bf-94e9-bc18b640c043.tar.gz"'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Working directory: '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_585b3713-9750-46bd-9295-c2a1dc3db35b/_staging'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper] Process started with process id 89094, waiting for process exit.
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:29Z INFO ProcessInvokerWrapper] Finished process 89094 with exit code 0, and elapsed time 00:00:00.0370771.
+[2025-04-15 11:56:29Z INFO ActionManager] Finished getting action repository.
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:29Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:29Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/upload-pages-artifact/tarball/a753861a5debcf57bf8b404356158c8e1e33150c' into /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_d7833eb8-6c94-4431-b974-008e1940f681/c23d821d-346b-40c9-813d-b31ed6342c75.tar.gz.
+[2025-04-15 11:56:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7aba8a2a-af03-490f-9522-f4d4f2b36c3d', success rate: 1/1.
+[2025-04-15 11:56:30Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/upload-pages-artifact/tarball/a753861a5debcf57bf8b404356158c8e1e33150c X-GitHub-Request-Id: F835:32EC93:1D3EB:14252C:67FE496E Http Status: OK
+[2025-04-15 11:56:30Z INFO ActionManager] Which2: 'tar'
+[2025-04-15 11:56:30Z INFO ActionManager] Location: '/usr/bin/tar'
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_d7833eb8-6c94-4431-b974-008e1940f681/c23d821d-346b-40c9-813d-b31ed6342c75.tar.gz"'
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper]   Working directory: '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_d7833eb8-6c94-4431-b974-008e1940f681/_staging'
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper] Process started with process id 89103, waiting for process exit.
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-15 11:56:30Z INFO ProcessInvokerWrapper] Finished process 89103 with exit code 0, and elapsed time 00:00:00.0273252.
+[2025-04-15 11:56:30Z INFO ActionManager] Finished getting action repository.
+[2025-04-15 11:56:30Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:30Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:30Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:30Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:30Z INFO HostContext] Well known directory 'Bin': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/bin'
+[2025-04-15 11:56:30Z INFO HostContext] Well known directory 'Root': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner'
+[2025-04-15 11:56:30Z INFO HostContext] Well known directory 'Work': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work'
+[2025-04-15 11:56:30Z INFO HostContext] Well known directory 'Actions': '/Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions'
+[2025-04-15 11:56:30Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/upload-artifact/tarball/ea165f8d65b6e75b540449e92b4886f43607fa02' into /Users/gimchanjin/Desktop/seoul_darak/seoul_darak/actions-runner/_work/_actions/_temp_04deb45d-e99d-4020-90dd-7dbcb2db48ba/8febb7f5-5922-48b0-bb47-f91cd37548be.tar.gz.
+[2025-04-15 11:56:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7aba8a2a-af03-490f-9522-f4d4f2b36c3d', success rate: 1/1.
