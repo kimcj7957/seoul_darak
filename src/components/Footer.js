@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="pt-4 xs:pt-6 sm:pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm xs:text-base sm:text-lg font-bold mb-3 xs:mb-4 md:mb-0">© 2025 서울다락. All Rights Reserved.</p>
-            <button className="w-full md:w-auto px-4 xs:px-6 py-1.5 xs:py-2 bg-[#2196F3] text-white rounded hover:bg-[#1976D2] text-sm xs:text-base sm:text-lg font-bold">서울다락 후원하기</button>
+            <button className="w-full md:w-auto px-4 xs:px-6 py-1.5 xs:py-2 bg-[#A5D6A7] text-white rounded hover:bg-[#81C784] text-sm xs:text-base sm:text-lg font-bold">서울다락 후원하기</button>
           </div>
         </div>
       </div>
