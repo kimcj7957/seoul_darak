@@ -41,7 +41,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          token: seouldarakfighting
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: out
           clean: true
