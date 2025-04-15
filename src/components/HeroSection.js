@@ -25,7 +25,7 @@ export default function HeroSection() {
           <div className="lg:w-[50%] lg:mt-[-2rem]">
             <div className="aspect-[16/16] relative rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="/images/hero.png" 
+                src={process.env.NODE_ENV === 'production' ? '/seoul_darak/images/hero.png' : '/images/hero.png'} 
                 alt="서울다락 협동조합" 
                 className="w-full h-full object-cover absolute inset-0"
               />

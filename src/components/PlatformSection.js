@@ -44,7 +44,7 @@ export default function PlatformSection() {
                  className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                 <div className="aspect-[3/4] relative">
                   <img 
-                    src="/images/plogging_poster.jpg" 
+                    src={process.env.NODE_ENV === 'production' ? '/seoul_darak/images/plogging_poster.jpg' : '/images/plogging_poster.jpg'} 
                     alt="우이천 플로깅 이벤트" 
                     className="w-full h-full object-cover absolute inset-0"
                   />
@@ -63,7 +63,7 @@ export default function PlatformSection() {
                 >
                   <div className="aspect-[3/4] relative">
                     <img 
-                      src="/images/boardgame_poster.jpg" 
+                      src={process.env.NODE_ENV === 'production' ? '/seoul_darak/images/boardgame_poster.jpg' : '/images/boardgame_poster.jpg'} 
                       alt="보드게임 모임" 
                       className="w-full h-full object-cover absolute inset-0"
                     />
