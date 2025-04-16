@@ -25,7 +25,7 @@ export default function NewsSection() {
             <span className="text-sm xs:text-base text-black font-semibold">서울다락 매장</span>
             <h3 className="text-lg xs:text-xl sm:text-2xl font-extrabold mb-1 xs:mb-2 text-black">서울다락 1호점 그랜드 오픈 안내</h3>
             <p className="text-black mb-1 xs:mb-2 line-clamp-3 text-sm xs:text-base sm:text-lg font-bold">
-              서울다락의 첫 번째 매장 '햄버거햄버거'가 오픈을 앞두고 있습니다. 
+              서울다락의 첫 번째 매장 '버버버거'가 오픈을 앞두고 있습니다. 
               바닥 시공과 기초 시공을 거쳐 백운시장 내 새로운 바람을 일으킬 예정이니 많은 관심 부탁드립니다 🌸
             </p>
             <p className="text-sm xs:text-base text-black font-semibold">2024-04-18</p>
