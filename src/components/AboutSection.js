@@ -9,8 +9,8 @@ export default function AboutSection() {
               <div className="bg-[#E8F5E9]/20 p-4 xs:p-6 rounded-lg">
                 <h3 className="text-lg xs:text-xl font-bold mb-2 text-black">서울다락이란?</h3>
                 <p className="text-gray-700">
-                  서울다락은 서울시의 도시재생사업을 통해 탄생한 협동조합입니다. 
-                  지역주민들의 자발적인 참여와 협력을 통해 지역의 문제를 해결하고, 
+                  서울다락은 도봉구의 지역 상권 및 시니어 주민들의 고용효과 증진을 위해 탄생한 지역 공동체입니다. 
+                  지역주민들의 자발적인 참여와 협력을 통해 지역의 문제를 개선하고 
                   지속가능한 공동체를 만들어가고 있습니다.
                 </p>
               </div>

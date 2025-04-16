@@ -20,18 +20,18 @@ export default function MediaSection() {
               지역주민들의 적극적인 참여로 쓰레기 수거와 재활용 교육이 이루어졌으며, 
               이를 통해 지역 환경 개선에 기여했습니다.
             </p>
-            <p className="text-sm xs:text-base text-black font-semibold">2024-04-10</p>
+            <p className="text-sm xs:text-base text-black font-semibold">2025-04-10</p>
           </div>
           <div className="bg-[#E8F5E9]/20 p-4 xs:p-6 rounded-lg">
             <h3 className="text-lg xs:text-xl font-bold mb-2 text-black">
-              서울다락, 시니어 일자리 창출 프로젝트 성공
+              서울다락, 시니어 일자리 창출 프로젝트 추진
             </h3>
             <p className="text-gray-700 mb-4">
-              서울다락이 추진한 시니어 일자리 창출 프로젝트가 성공적으로 마무리되었습니다. 
-              지역 내 은퇴자들을 대상으로 한 재교육 프로그램과 일자리 연계를 통해 
-              세대 간 소통의 장이자 지역 경제 활성화에 기여하는 새로운 모델로 주목받고 있습니다.
+              서울다락이 추진한 시니어 일자리 창출 프로젝트가 성공적으로 추진되고 있습니다. 
+              지역 내 은퇴자들을 대상으로 한 창업 프로그램과 일자리 연계를 통해 
+              시니어 지역 경제 활성화에 기여하는 새로운 모델로 주목받고 있습니다.
             </p>
-            <p className="text-sm xs:text-base text-black font-semibold">2024-04-05</p>
+            <p className="text-sm xs:text-base text-black font-semibold">2025-04-05</p>
           </div>
         </div>
       </div>
