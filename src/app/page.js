@@ -23,7 +23,7 @@ export default function Home() {
       <PlatformSection />
       <CooperationSection />
       <NewsSection />
-      <MediaSection />
+      {/* <MediaSection /> */}
     </main>
   );
 }
