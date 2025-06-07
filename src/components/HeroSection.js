@@ -27,7 +27,7 @@ export default function HeroSection() {
               다양한 세대가 함께 모여 즐거운 시간을 보내며 자연스럽게 소통하는 계기가 되고 있습니다.
             </p>
             <div className="flex flex-wrap gap-3 xs:gap-4">
-              <Link href="/join" className="px-4 xs:px-6 py-2 xs:py-3 bg-[#A5D6A7] text-white rounded-full hover:bg-[#81C784] text-sm xs:text-base sm:text-lg font-bold inline-block transition-colors duration-300">조합원 가입하기</Link>
+              <Link href="/join" className="px-4 xs:px-6 py-2 xs:py-3 bg-[#A5D6A7] text-white rounded-full hover:bg-[#81C784] text-sm xs:text-base sm:text-lg font-bold inline-block transition-colors duration-300">회원 가입</Link>
               <a href="https://naver.me/F74qKlnO" target="_blank" rel="noopener noreferrer" className="px-4 xs:px-6 py-2 xs:py-3 border border-[#A5D6A7] text-[#A5D6A7] rounded-full hover:bg-[#A5D6A7]/10 text-sm xs:text-base sm:text-lg font-bold inline-block transition-colors duration-300">매장 위치 보기</a>
             </div>
           </div>
