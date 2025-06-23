@@ -13,7 +13,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-black">이메일</h3>
-                <p className="text-gray-700">contact@seouldarak.org</p>
+                <p className="text-gray-700">tlsgorbs1026@gmaill.com</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -24,7 +24,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-black">전화</h3>
-                <p className="text-gray-700">02-123-4567</p>
+                <p className="text-gray-700">010-4321-1818</p>
               </div>
             </div>
           </div>

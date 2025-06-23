@@ -9,7 +9,7 @@ export default function NewsSection() {
           <h2 className="text-xl xs:text-2xl sm:text-3xl font-extrabold text-black">소식</h2>
           <Link href="/news" className="text-[#A5D6A7] hover:underline text-sm xs:text-base sm:text-lg font-bold">More</Link>
         </div>
-
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 xs:gap-6">
           {/* Instagram Profile */}
           <div className="lg:col-span-1">

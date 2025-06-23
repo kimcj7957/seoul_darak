@@ -21,7 +21,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <PlatformSection />
-      <CooperationSection />
+      {/* <CooperationSection /> */}
       <NewsSection />
       {/* <MediaSection /> */}
     </main>

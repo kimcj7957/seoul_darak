@@ -26,7 +26,7 @@ export default function CooperationSection() {
         </div>
 
         <div className="text-center mt-6 xs:mt-8 sm:mt-12">
-          <Link href="/join" className="px-4 xs:px-6 py-2 xs:py-3 bg-[#A5D6A7] text-white rounded-full hover:bg-[#81C784] text-sm xs:text-base sm:text-lg font-bold inline-block">조합원 참여하기</Link>
+          <Link href="/join" className="px-4 xs:px-6 py-2 xs:py-3 bg-[#A5D6A7] text-white rounded-full hover:bg-[#81C784] text-sm xs:text-base sm:text-lg font-bold inline-block">회원으로 참여하기</Link>
         </div>
       </div>
     </section>
