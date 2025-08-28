@@ -24,6 +24,7 @@ export default function HeroSection() {
             </p>
             <p className={`text-sm xs:text-base sm:text-lg mb-6 xs:mb-8 sm:mb-10 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
               서울다락은 시니어 채용과 은퇴자의 원활한 창업을 지원하기 위해 탄생했습니다.<br />
+              <br />
               현재 이를 위하여 버버버거 매장을 런칭하였습니다.<br/> 해당 매장은 소규모 창업을 실현하며 현재 성행 영업 중에 있습니다.
             </p>
             <div className="flex flex-wrap gap-3 xs:gap-4">
