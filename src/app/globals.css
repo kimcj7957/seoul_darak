@@ -175,13 +175,7 @@ body {
   background-color: #1E1E24;
 }
 
-.dark .bg-[#E8F5E9]/98 {
-  background-color: rgba(30, 30, 36, 0.98);
-}
-
-.dark .bg-[#E8F5E9]/20 {
-  background-color: rgba(30, 30, 36, 0.2);
-}
+/* Removed invalid dark mode overrides for bg-[#E8F5E9]/98 and /20 to avoid CSS parsing errors */
 
 .dark .hover:bg-gray-100:hover {
   background-color: #2A2A32;
