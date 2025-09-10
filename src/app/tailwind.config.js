@@ -44,7 +44,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Nanum Gothic', 'sans-serif'],
+        sans: ['SeoulHangang', 'Nanum Gothic', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-primary': 'linear-gradient(to right, #E8F5E9, #A5D6A7)',

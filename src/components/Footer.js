@@ -7,12 +7,33 @@ export default function Footer() {
       <div className="container mx-auto px-3 xs:px-4 sm:px-6">
         <div className="flex flex-col md:flex-row justify-between mb-4 xs:mb-6 sm:mb-8">
           <div>
-            <h3 className="text-lg xs:text-xl sm:text-2xl font-extrabold mb-3 xs:mb-4">서울다락</h3>
-            <ul className="space-y-1 xs:space-y-2">
-              <li><Link href="/organization" className="hover:text-gray-300 text-sm xs:text-base sm:text-lg font-bold">함께하는 사람들</Link></li>
-              <li><Link href="/privacy" className="hover:text-gray-300 text-sm xs:text-base sm:text-lg font-bold">개인정보처리방침</Link></li>
-              <li><Link href="/terms" className="hover:text-gray-300 text-sm xs:text-base sm:text-lg font-bold">이용약관</Link></li>
-            </ul>
+            <nav className="flex items-center gap-2 xs:gap-3 whitespace-nowrap flex-nowrap overflow-x-auto">
+              <span className="text-sm xs:text-base sm:text-lg font-extrabold leading-6 xs:leading-7 min-h-[1.5rem] xs:min-h-[1.75rem]">사회적협동조합 서울다락</span>
+              <span className="opacity-60" aria-hidden>│</span>
+              <Link href="/organization" className="hover:text-gray-300 text-sm xs:text-base sm:text-lg font-bold leading-6 xs:leading-7 min-h-[1.5rem] xs:min-h-[1.75rem]">함께하는 사람들</Link>
+              <span className="opacity-60" aria-hidden>│</span>
+              <Link href="/privacy" className="hover:text-gray-300 text-sm xs:text-base sm:text-lg font-bold leading-6 xs:leading-7 min-h-[1.5rem] xs:min-h-[1.75rem]">개인정보 처리방침</Link>
+              <span className="opacity-60" aria-hidden>│</span>
+              <Link href="/terms" className="hover:text-gray-300 text-sm xs:text-base sm:text-lg font-bold leading-6 xs:leading-7 min-h-[1.5rem] xs:min-h-[1.75rem]">이용약관</Link>
+            </nav>
+            <br/>
+            <div className="mt-2 space-y-1">
+              <div className="flex items-center gap-2 xs:gap-3 flex-wrap">
+                <span className="text-xs xs:text-sm sm:text-base leading-6 xs:leading-7">대표 : 신해균</span>
+                <span className="opacity-60" aria-hidden>│</span>
+                <span className="text-xs xs:text-sm sm:text-base leading-6 xs:leading-7">전화 : 010-4321-1818</span>
+                <span className="opacity-60" aria-hidden>│</span>
+                <span className="text-xs xs:text-sm sm:text-base leading-6 xs:leading-7">주소 : 서울특별시 도봉구 삼양로 154길 42, 1층</span>
+              </div>
+              <div className="flex items-center gap-2 xs:gap-3 flex-wrap">
+                <span className="text-xs xs:text-sm sm:text-base leading-6 xs:leading-7">인가 번호 : 제2025-1420-S0-5704호</span>
+                <span className="opacity-60" aria-hidden>│</span>
+                <span className="text-xs xs:text-sm sm:text-base leading-6 xs:leading-7">E-mail : seouldarak1@gmail.com</span>
+                <span className="opacity-60" aria-hidden>│</span>
+                <span className="text-xs xs:text-sm sm:text-base leading-6 xs:leading-7">개인정보관리책임자 : 신해균</span>
+              </div>
+            
+            </div>
           </div>
           <div>
             <h3 className="text-lg xs:text-xl sm:text-2xl font-extrabold mb-3 xs:mb-4 mt-4 xs:mt-6 md:mt-0">SNS</h3>

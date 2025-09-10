@@ -16,7 +16,7 @@ export default function HeroSection() {
         <div className="flex flex-col lg:flex-row gap-6 xs:gap-8 lg:gap-12">
           <div className="lg:w-[50%]">
             <h1 className={`text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3 xs:mb-4 sm:mb-6 ${darkMode ? 'text-white' : 'text-black'}`}>
-              서울다락
+              사회적협동조합 서울다락
             </h1>
             <p className={`text-lg xs:text-xl sm:text-2xl mb-3 xs:mb-4 sm:mb-6 font-bold ${darkMode ? 'text-white' : 'text-black'}`}>
               시니어와 은퇴자의 창업 지원을 위한 <br className="md:hidden" />
