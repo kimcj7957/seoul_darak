@@ -28,7 +28,7 @@ export default function HeroSection() {
               현재 이를 위하여 버버버거 매장을 런칭하였습니다.<br/> 해당 매장은 소규모 창업을 실현하며 현재 성행 영업 중에 있습니다.
             </p>
             <div className="flex flex-wrap gap-3 xs:gap-4">
-              <Link href="/join" className="px-4 xs:px-6 py-2 xs:py-3 bg-[#A5D6A7] text-white rounded-full hover:bg-[#81C784] text-sm xs:text-base sm:text-lg font-bold inline-block transition-colors duration-300">회원 가입</Link>
+              <Link href="/join" className="px-4 xs:px-6 py-2 xs:py-3 bg-[#A5D6A7] text-white rounded-full hover:bg-[#81C784] text-sm xs:text-base sm:text-lg font-bold inline-block transition-colors duration-300">조합원 가입</Link>
               <a href="https://naver.me/F74qKlnO" target="_blank" rel="noopener noreferrer" className="px-4 xs:px-6 py-2 xs:py-3 border border-[#A5D6A7] text-[#A5D6A7] rounded-full hover:bg-[#A5D6A7]/10 text-sm xs:text-base sm:text-lg font-bold inline-block transition-colors duration-300">매장 위치 보기</a>
             </div>
           </div>
