@@ -6,7 +6,7 @@ export default function DonationPage() {
 
   const bankName = '하나은행';
   const accountNumber = '211-910022-72904';
-  const accountHolder = '사회적협동조합 서울다락';
+  const accountHolder = '서울다락';
 
   const copyAccountInfoToClipboard = async (value) => {
     // Modern API (secure contexts/browsers)
@@ -59,7 +59,7 @@ export default function DonationPage() {
             서울다락 <span className="text-[#A5D6A7]">후원하기</span>
           </h1>
           <p className="text-xl sm:text-2xl mb-4 max-w-2xl font-bold text-black">
-            여러분의 소중한 일시후원은 지역 공동체 활동과 청년 일자리 창출에 사용됩니다.
+            여러분의 소중한 일시후원은 지역 공동체 활동과 일자리 창출에 사용됩니다.
           </p>
           <p className="text-base sm:text-lg text-gray-700 max-w-3xl">
             CMS 없이 간편하게 계좌이체로 후원하실 수 있어요.
