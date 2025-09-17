@@ -10,7 +10,7 @@ export default function MediaPage() {
   const pressItems = [
     {
       href: "https://ceo.dobong.go.kr/user/bbs/BD_selectBbs.do?q_bbsSn=1002&q_bbsDocNo=20250831163908252",
-      imgSrc: "https://ceo.dobong.go.kr/webcontent/bbs/2025/8/31/0af90839-7acd-484d-b85d-1f501bfd6044.jpg",
+      imgSrc: "https://ceo.dobong.go.kr/webcontent/bbs/2025/8/31/1b20d1c9-8bd9-4969-a0f9-b106a46b0bcb.jpg",
       title: "백운시장 플리마켓",
       source: "도봉구청장실",
       displayDate: "2025.08.31",
