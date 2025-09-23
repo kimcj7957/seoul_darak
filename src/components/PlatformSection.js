@@ -69,7 +69,7 @@ export default function PlatformSection() {
   const visibleEvents = sortedEvents.slice(0, 4);
   const hiddenEvents = sortedEvents.slice(4);
   return (
-    <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-white">
+    <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
       <div className="container mx-auto px-3 xs:px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row gap-6 xs:gap-8 lg:gap-12">
           <div className="lg:w-1/2">

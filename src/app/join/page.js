@@ -73,7 +73,7 @@ export default function Join() {
   return (
     <div className="min-h-screen font-semibold text-base text-[#17171B]">
       {/* Hero Section */}
-      <section className="bg-[#E8F5E9]/98 py-6 xs:py-8 sm:py-12 md:py-16">
+      <section className="bg-[#f7f5ec] py-6 xs:py-8 sm:py-12 md:py-16">
         <div className="container mx-auto px-4 sm:px-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 md:mb-8 max-w-3xl leading-tight text-black">
             서울다락 <span className="text-[#A5D6A7]">조합원</span>이 되어<br />
@@ -88,7 +88,7 @@ export default function Join() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-white">
+      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-12 text-center text-black">조합원 혜택</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xs:gap-8 sm:gap-10">
@@ -124,7 +124,7 @@ export default function Join() {
       </section>
 
       {/* Process Section */}
-      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#E8F5E9]/98">
+      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-12 text-center text-black">가입 절차</h2>
           <div className="max-w-3xl mx-auto">
@@ -162,7 +162,7 @@ export default function Join() {
       </section>
 
       {/* Membership Fee Section */}
-      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-white">
+      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-12 text-center text-black">조합원 가입비</h2>
           <div className="max-w-4xl mx-auto">
@@ -207,7 +207,7 @@ export default function Join() {
       </section>
 
       {/* Agreement Section */}
-      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#E8F5E9]/98">
+      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-12 text-center text-black">개인정보 수집 및 이용 동의</h2>
           <div className="max-w-3xl mx-auto">
@@ -353,7 +353,7 @@ export default function Join() {
       </section>
 
       {/* Conditions Section */}
-      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#E8F5E9]/98">
+      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-8 text-center text-black">가입 자격</h2>
           <div className="max-w-3xl mx-auto">

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CooperationSection() {
   return (
-    <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#E8F5E9]/98">
+    <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
       <div className="container mx-auto px-3 xs:px-4 sm:px-6">
         <h2 className="text-xl xs:text-2xl sm:text-3xl font-extrabold mb-2 xs:mb-3 sm:mb-4 text-center text-black">서울다락 서비스</h2>
         <p className="text-center text-base xs:text-lg sm:text-xl mb-6 xs:mb-8 sm:mb-12 font-bold text-black">서울다락과 함께 지역 사회에 참여하세요.</p>

@@ -5,13 +5,11 @@ export default function HeroSection() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    if (document.documentElement.classList.contains('dark')) {
-      setDarkMode(true);
-    }
+    // Dark mode temporarily disabled
   }, []);
 
   return (
-    <section className={`relative ${darkMode ? 'bg-[#17171B]' : 'bg-white'}`}>
+    <section className={`relative ${darkMode ? 'bg-[#17171B]' : 'bg-[#f7f5ec]'}`}>
       <div className="container mx-auto px-3 xs:px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row gap-6 xs:gap-8 lg:gap-12">
           <div className="lg:w-[50%]">

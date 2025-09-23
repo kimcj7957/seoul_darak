@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function MediaSection() {
   return (
-    <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-white">
+    <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
       <div className="container mx-auto px-3 xs:px-4 sm:px-6">
         <div className="flex justify-between items-center mb-6 xs:mb-8">
           <h2 className="text-xl xs:text-2xl sm:text-3xl font-extrabold text-black">언론보도</h2>

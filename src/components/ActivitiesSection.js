@@ -1,6 +1,6 @@
 export default function ActivitiesSection() {
   return (
-    <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#E8F5E9]/98">
+    <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
       <div className="container mx-auto px-3 xs:px-4 sm:px-6">
         <h2 className="text-xl xs:text-2xl sm:text-3xl font-extrabold mb-4 xs:mb-6 sm:mb-8 text-center text-black">주요 활동</h2>
         <div className="max-w-4xl mx-auto">

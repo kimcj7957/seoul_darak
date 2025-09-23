@@ -53,7 +53,7 @@ export default function DonationPage() {
   return (
     <div className="min-h-screen font-semibold text-base text-[#17171B]">
       {/* Hero */}
-      <section className="bg-[#E8F5E9]/98 py-6 xs:py-8 sm:py-12 md:py-16">
+      <section className="bg-[#f7f5ec] py-6 xs:py-8 sm:py-12 md:py-16">
         <div className="container mx-auto px-4 sm:px-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 md:mb-8 max-w-3xl leading-tight text-black">
             서울다락 <span className="text-[#A5D6A7]">후원하기</span>
@@ -68,7 +68,7 @@ export default function DonationPage() {
       </section>
 
       {/* 일시후원 안내 */}
-      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-white">
+      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-8 text-black">일시후원 안내</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xs:gap-8">
@@ -89,7 +89,7 @@ export default function DonationPage() {
       </section>
 
       {/* 후원계좌 안내 */}
-      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#E8F5E9]/98">
+      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
         <div className="container mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-6 text-black">후원계좌 안내</h2>
           <div className="bg-white rounded-xl p-6 xs:p-8 shadow-sm max-w-3xl">
@@ -118,7 +118,7 @@ export default function DonationPage() {
       </section>
 
       {/* 유의사항 */}
-      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-white">
+      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-6 text-black">유의사항</h2>
           <ul className="space-y-3 text-gray-700">

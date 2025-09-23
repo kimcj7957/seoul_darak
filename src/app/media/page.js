@@ -37,7 +37,7 @@ export default function MediaPage() {
   );
 
   return (
-    <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-white">
+    <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
       <div className="container mx-auto px-3 xs:px-4 sm:px-6">
         <div className="flex justify-between items-center mb-6 xs:mb-8">
           <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-extrabold text-black">미디어</h1>

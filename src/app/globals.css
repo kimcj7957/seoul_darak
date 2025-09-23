@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Elice DX Neolli - self hosted */
+@font-face {
+  font-family: 'Elice DX Neolli';
+  src: url('/fonts/elice-dx-neolli/EliceDXNeolli-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Elice DX Neolli';
+  src: url('/fonts/elice-dx-neolli/EliceDXNeolli-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Elice DX Neolli';
+  src: url('/fonts/elice-dx-neolli/EliceDXNeolli-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Seoul Hangang Webfont (CDN) */
 @font-face {
   font-family: 'SeoulHangang';
@@ -29,7 +54,7 @@
 
 @layer base {
   :root {
-    --background: #ffffff;
+    --background: #f7f5ec;
     --foreground: #FFFFFF;
     --primary: #A5D6A7;
     --primary-light: #E8F5E9;
@@ -132,9 +157,14 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: 'SeoulHangang', 'Nanum Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;
+  font-family: 'Elice DX Neolli', 'SeoulHangang', 'Nanum Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;
   word-break: keep-all;
   line-height: 1.6;
+}
+
+/* Ensure the font is applied to common form and UI elements across all routes */
+html, body, button, input, select, textarea {
+  font-family: 'Elice DX Neolli', 'SeoulHangang', 'Nanum Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif !important;
 }
 
 /* 다크모드 스타일 */

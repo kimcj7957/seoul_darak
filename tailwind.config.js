@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['SeoulHangang', 'var(--font-nanum-gothic)', 'Nanum Gothic', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
+        sans: ['Elice DX Neolli', 'SeoulHangang', 'var(--font-nanum-gothic)', 'Nanum Gothic', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
       },
       screens: {
         'xs': '375px',  // 작은 모바일 기기
