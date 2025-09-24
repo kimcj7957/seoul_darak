@@ -12,7 +12,7 @@ export default function ClientLayout({ children }) {
   return (
     <div className="min-h-screen">
       <Navbar onMenuToggle={setMobileMenuOpen} />
-      <div className={`pt-[72px] transition-all duration-300 ${mobileMenuOpen ? 'mt-[320px]' : 'mt-0'}`}>
+      <div className={`pt-[96px] xs:pt-[120px] sm:pt-[144px] lg:pt-[144px] transition-all duration-300 ${mobileMenuOpen ? 'mt-[360px]' : 'mt-0'}`}>
         <AnimatePresence mode="wait">
           <motion.div
             key={pathname}
