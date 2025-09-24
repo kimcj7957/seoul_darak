@@ -1,26 +1,20 @@
 import Link from "next/link";
-import { useState, useEffect } from "react";
 
 export default function HeroSection() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    // Dark mode temporarily disabled
-  }, []);
 
   return (
-    <section className={`relative ${darkMode ? 'bg-[#17171B]' : 'bg-[#f7f5ec]'}`}>
+    <section className={`relative bg-[#f7f5ec]`}>
       <div className="container mx-auto px-3 xs:px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row gap-6 xs:gap-8 lg:gap-12">
           <div className="lg:w-[50%]">
-            <h1 className={`text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3 xs:mb-4 sm:mb-6 ${darkMode ? 'text-white' : 'text-black'}`}>
+            <h1 className={`text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3 xs:mb-4 sm:mb-6 text-black`}>
               사회적협동조합 서울다락
             </h1>
-            <p className={`text-lg xs:text-xl sm:text-2xl mb-3 xs:mb-4 sm:mb-6 font-bold ${darkMode ? 'text-white' : 'text-black'}`}>
+            <p className={`text-lg xs:text-xl sm:text-2xl mb-3 xs:mb-4 sm:mb-6 font-bold text-black`}>
               시니어와 은퇴자의 창업 지원을 위한 <br className="md:hidden" />
               서울다락입니다.
             </p>
-            <p className={`text-sm xs:text-base sm:text-lg mb-6 xs:mb-8 sm:mb-10 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+            <p className={`text-sm xs:text-base sm:text-lg mb-6 xs:mb-8 sm:mb-10 text-gray-600`}>
               서울다락은 시니어 채용과 은퇴자의 원활한 창업을 지원하기 위해 탄생했습니다.<br />
               <br />
               현재 이를 위하여 버버버거 매장을 런칭하였습니다.<br/> 해당 매장은 소규모 창업을 실현하며 현재 성행 영업 중에 있습니다.

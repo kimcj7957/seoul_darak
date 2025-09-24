@@ -758,6 +758,16 @@ html, body, button, input, select, textarea {
   }
 }
 
+/* Navbar/Mobile menu animations */
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-dropdown {
+  animation: fadeSlideDown 250ms ease-out both;
+}
+
 /* 알림 스타일 */
 .notification {
   position: fixed;

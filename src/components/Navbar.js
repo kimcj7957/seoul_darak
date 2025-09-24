@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className={`py-2 xs:py-3 sm:py-4 lg:py-2 bg-[#f7f5ec] shadow-sm`}>
+    <nav className={`py-2 xs:py-3 sm:py-4 lg:py-2 bg-[#f7f5ec] shadow-sm animate-dropdown`}>
       <div className="container mx-auto px-3 xs:px-4 sm:px-6">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center">
@@ -50,11 +50,11 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="lg:hidden mt-4 space-y-4">
-            <Link href="/about" className={`block text-base font-bold ${darkMode ? 'text-white' : 'text-black'} hover:text-[#A5D6A7] transition-colors duration-300`}>소개</Link>
-            <Link href="/activities" className={`block text-base font-bold ${darkMode ? 'text-white' : 'text-black'} hover:text-[#A5D6A7] transition-colors duration-300`}>활동</Link>
-            <Link href="/media" className={`block text-base font-bold ${darkMode ? 'text-white' : 'text-black'} hover:text-[#A5D6A7] transition-colors duration-300`}>미디어</Link>
-            <Link href="/donation" className={`block text-base font-bold ${darkMode ? 'text-white' : 'text-black'} hover:text-[#A5D6A7] transition-colors duration-300`}>후원하기</Link>
+          <div className="lg:hidden mt-4 space-y-4 animate-dropdown">
+            <Link href="/about" className={`block text-base font-bold text-black hover:text-[#A5D6A7] transition-colors duration-300`}>소개</Link>
+            <Link href="/activities" className={`block text-base font-bold text-black hover:text-[#A5D6A7] transition-colors duration-300`}>활동</Link>
+            <Link href="/media" className={`block text-base font-bold text-black hover:text-[#A5D6A7] transition-colors duration-300`}>미디어</Link>
+            <Link href="/donation" className={`block text-base font-bold text-black hover:text-[#A5D6A7] transition-colors duration-300`}>후원하기</Link>
             <Link href="/join" className="block px-4 py-2 bg-[#A5D6A7] text-white rounded-full hover:bg-[#81C784] text-base font-bold transition-colors duration-300">조합원 가입</Link>
           </div>
         )}

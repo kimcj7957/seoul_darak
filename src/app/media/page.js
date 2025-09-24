@@ -17,12 +17,36 @@ export default function MediaPage() {
       dateISO: "2025-08-31T00:00:00+09:00",
     },
     {
+      href: "https://www.dongbukilbo.com/etnews/?fn=v&no=38728&cid=21060200",
+      imgSrc: "/images/press/2025-09-28/poster.jpg",
+      title: "서울다락×백운시장 ‘우리동네 플리마켓’ 2차 개최",
+      source: "동북일보",
+      displayDate: "2025.09.21",
+      dateISO: "2025-09-21T00:00:00+09:00",
+    },
+    {
       href: "https://weekly.cnbnews.com/news/article.html?no=189064",
       imgSrc: "https://weekly.cnbnews.com/data/photos/20250937/art_189064_1757307087.jpg",
       title: "도봉구, 백운시장서 벼룩시장 행사…어르신 콩국수 나눔도",
       source: "CNB뉴스",
       displayDate: "2025.09.08",
       dateISO: "2025-09-08T00:00:00+09:00",
+    },
+    {
+      href: "http://www.igangbuk.com/news/munhoa/5634",
+      imgSrc: "/images/press/2025-09-28/vendors.jpg",
+      title: "서울다락·백운시장 상인회, 9월 28일 ‘우리동네 플리마켓’ 2차 개최",
+      source: "강북신문",
+      displayDate: "2025.09.22",
+      dateISO: "2025-09-22T00:00:00+09:00",
+    },
+    {
+      href: "https://www.seoulinnews.com/news/articleView.html?idxno=1847",
+      imgSrc: "/images/press/2025-09-28/dobong-visit.jpg",
+      title: "도봉구, 서울다락·백운시장 상인회, 9월 28일 ‘우리동네 플리마켓’ 2차 개최",
+      source: "서울인뉴스",
+      displayDate: "2025.09.17",
+      dateISO: "2025-09-17T00:00:00+09:00",
     },
   ];
 
