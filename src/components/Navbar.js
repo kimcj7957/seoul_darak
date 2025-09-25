@@ -7,16 +7,16 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className={`py-2 xs:py-3 sm:py-2 lg:py-1 bg-[#f7f5ec] shadow-sm animate-dropdown`}>
+    <nav className={`py-0 bg-[#f7f5ec] shadow-sm animate-dropdown`}>
       <div className="container mx-auto px-3 xs:px-4 sm:px-6">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/seouldarak_logo.png"
+              src="/images/seouldarak_logo_mid_narrow.png"
               alt="서울다락 로고"
               width={180}
               height={48}
-              className="h-20 xs:h-24 sm:h-28 lg:h-32 w-auto"
+              className="w-auto h-[48px] xs:h-[56px] sm:h-[64px] lg:h-[72px] object-contain"
               priority
             />
           </Link>
