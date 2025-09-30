@@ -5,6 +5,14 @@ import { useState } from "react";
 export default function PlatformSection() {
   const events = [
     {
+      href: "https://www.instagram.com/p/DOlQTgdEb58",
+      imgSrc: "/images/250928_fleamarket.jpg",
+      imgAlt: "서울다락 X 백운시장 우리동네 플리마켓 (2025-09-28)",
+      title: "제2회 서울다락 X 백운시장 상인회 우리동네 플리마켓",
+      displayDate: "2025.09.28 12:00-17:00",
+      dateISO: "2025-09-28T12:00:00+09:00",
+    },
+    {
       href: "https://www.instagram.com/p/DNDAbhlSt04/?utm_source=ig_embed&ig_rid=cee73e3b-6148-45a0-b936-29207fa92aca&img_index=3",
       imgSrc: "/images/flea_market_250831.jpeg",
       imgAlt: "서울다락 X 백운시장 상인회 플리마켓",
