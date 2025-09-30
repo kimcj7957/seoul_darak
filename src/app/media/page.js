@@ -9,6 +9,14 @@ export default function MediaPage() {
   // 뉴스보도 탭 데이터 (외부 기사 링크)
   const pressItems = [
     {
+      href: "https://www.newstap.co.kr/news/articleView.html?idxno=314087",
+      imgSrc: "/images/press/2025-09-28_completed/[사진 1] 비어있는 상점이 플리마켓으로 활성화된 모습.jpg",
+      title: "도봉구 백운시장 ‘제2회 백운다락장’ 성황리 개최…세대와 지역 잇는 교류의 장",
+      source: "뉴스탭",
+      displayDate: "2025.10.01",
+      dateISO: "2025-10-01T00:15:00+09:00",
+    },
+    {
       href: "https://ceo.dobong.go.kr/user/bbs/BD_selectBbs.do?q_bbsSn=1002&q_bbsDocNo=20250831163908252",
       imgSrc: "https://ceo.dobong.go.kr/webcontent/bbs/2025/8/31/1b20d1c9-8bd9-4969-a0f9-b106a46b0bcb.jpg",
       title: "백운시장 플리마켓",
