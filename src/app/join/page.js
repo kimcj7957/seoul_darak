@@ -252,9 +252,6 @@ export default function Join() {
         <div className="container mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-6 text-black">함께 만들어가는 우리 지역의 변화</h2>
           <p className="text-xl mb-8 text-gray-700">서울다락 조합원이 되어 지역 사회의 발전에 동참해주세요.</p>
-          <button className="bg-[#A5D6A7] text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-[#81C784] transition-colors">
-            가입 신청하기
-          </button>
         </div>
       </section>
     </div>
