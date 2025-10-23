@@ -62,7 +62,7 @@ export default function DonationPage() {
             여러분의 소중한 일시후원은 지역 공동체 활동과 일자리 창출에 사용됩니다.
           </p>
           <p className="text-base sm:text-lg text-gray-700 max-w-3xl">
-            CMS 없이 간편하게 계좌이체로 후원하실 수 있어요.
+            계좌이체로 후원하실 수 있어요. (2025년 11월 중 CMS 지원 예정)
           </p>
         </div>
       </section>

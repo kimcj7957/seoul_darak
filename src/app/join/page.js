@@ -1,74 +1,7 @@
 'use client';
 import Link from "next/link";
-import { useState } from 'react';
 
 export default function Join() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    address: '',
-    birth: '',
-    job: '',
-    motivation: '',
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
-
-  const toggleMobileMenu = () => {
-    console.log("현재 상태:", mobileMenuOpen);
-    setMobileMenuOpen(prev => {
-      console.log("변경될 상태:", !prev);
-      return !prev;
-    });
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({
-          name: '',
-          phone: '',
-          email: '',
-          address: '',
-          birth: '',
-          job: '',
-          motivation: '',
-        });
-      } else {
-        setSubmitStatus('error');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div className="min-h-screen font-semibold text-base text-[#17171B]">
@@ -230,124 +163,20 @@ export default function Join() {
         </div>
       </section>
 
-      {/* Application Form Section */}
+      {/* Membership Form Redirect */}
       <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-extrabold mb-12 text-center text-black">가입 신청서</h2>
-          <div className="max-w-3xl mx-auto">
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-base font-bold mb-2 text-black">이름</label>
-                  <input 
-                    type="text" 
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#A5D6A7]" 
-                    required 
-                  />
-                </div>
-                <div>
-                  <label className="block text-base font-bold mb-2 text-black">연락처</label>
-                  <input 
-                    type="tel" 
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#A5D6A7]" 
-                    required 
-                  />
-                </div>
-                <div>
-                  <label className="block text-base font-bold mb-2 text-black">이메일</label>
-                  <input 
-                    type="email" 
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#A5D6A7]" 
-                    required 
-                  />
-                </div>
-                <div>
-                  <label className="block text-base font-bold mb-2 text-black">주소</label>
-                  <input 
-                    type="text" 
-                    name="address"
-                    value={formData.address}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#A5D6A7]" 
-                    required 
-                  />
-                </div>
-                <div>
-                  <label className="block text-base font-bold mb-2 text-black">생년월일 (선택)</label>
-                  <input 
-                    type="date" 
-                    name="birth"
-                    value={formData.birth}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#A5D6A7]" 
-                  />
-                </div>
-                <div>
-                  <label className="block text-base font-bold mb-2 text-black">직업 (선택)</label>
-                  <input 
-                    type="text" 
-                    name="job"
-                    value={formData.job}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#A5D6A7]" 
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-base font-bold mb-2 text-black">가입 동기</label>
-                <textarea 
-                  name="motivation"
-                  value={formData.motivation}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#A5D6A7] h-32" 
-                  placeholder="서울다락에 가입하고 싶은 이유를 적어주세요."
-                  required
-                ></textarea>
-              </div>
-
-              <div className="flex items-center">
-                <input 
-                  type="checkbox" 
-                  id="agreement" 
-                  className="w-4 h-4 text-[#A5D6A7] border-gray-300 rounded focus:ring-[#A5D6A7]" 
-                  required 
-                />
-                <label htmlFor="agreement" className="ml-2 text-base text-gray-600">
-                  개인정보 수집 및 이용에 동의합니다.
-                </label>
-              </div>
-
-              {submitStatus === 'success' && (
-                <div className="text-green-600 text-center">
-                  가입 신청이 완료되었습니다. 이메일로 연락드리겠습니다.
-                </div>
-              )}
-              {submitStatus === 'error' && (
-                <div className="text-red-600 text-center">
-                  가입 신청 중 오류가 발생했습니다. 다시 시도해주세요.
-                </div>
-              )}
-
-              <div className="text-center">
-                <button 
-                  type="submit" 
-                  className="px-8 py-4 bg-[#A5D6A7] text-white rounded-full hover:bg-[#81C784] text-lg font-bold disabled:opacity-50"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? '전송 중...' : '가입 신청하기'}
-                </button>
-              </div>
-            </form>
+          <h2 className="text-2xl sm:text-3xl font-extrabold mb-6 text-center text-black">조합원 가입 폼으로 이동</h2>
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-gray-700 mb-6">아래 버튼을 눌러 가입 폼에서 정보를 작성해 주세요.</p>
+            <a
+              href="https://forms.gle/ocPdNhCHNGMhtB1EA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-[#A5D6A7] text-white rounded-full text-lg font-bold hover:bg-[#81C784] transition-colors"
+            >
+              조합원 가입 신청하기
+            </a>
           </div>
         </div>
       </section>
