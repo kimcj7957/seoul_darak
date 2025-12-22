@@ -30,7 +30,7 @@ export default function Navbar() {
               href="https://secure.donus.org/seouldarak/pay"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-[#9FD4A4] text-white rounded-full hover:bg-[#7ECF8C] text-base font-bold transition-colors duration-300"
+              className="px-4 py-2 bg-[#A5D6A7] text-white rounded-full hover:bg-[#81C784] text-base font-bold transition-colors duration-300"
             >
               후원하기
             </a>
