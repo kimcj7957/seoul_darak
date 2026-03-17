@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const donationMenuItems = [
   { href: "/donation#donation-inquiry", label: "후원문의" },
-  { href: "/donation#fundraising-records", label: "기부금 모집내역" },
-  { href: "/donation#fund-usage", label: "기부금 활용내역" },
+  { href: "/donation/fundraising-records", label: "기부금 모집내역" },
+  { href: "/donation/fund-usage", label: "기부금 활용내역" },
 ];
 
 export default function Navbar() {

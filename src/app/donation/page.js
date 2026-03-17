@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function DonationPage() {
@@ -168,28 +169,36 @@ export default function DonationPage() {
         </div>
       </section>
 
-      <section id="fundraising-records" className="scroll-mt-28 xs:scroll-mt-32 sm:scroll-mt-36 py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
+      <section className="py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-4xl mx-auto rounded-2xl bg-white p-6 xs:p-8 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-extrabold mb-4 text-black">기부금 모집내역</h2>
-            <p className="text-gray-700 leading-relaxed">
-              기부금 모집내역은 공시 자료 확정 후 게시판 형식으로 연도별 공개 예정입니다.
-              현재는 후원 계좌를 통한 일시후원 중심으로 운영하고 있으며, 추후 모집 내역을
-              체계적으로 정리해 공개할 예정입니다.
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-extrabold mb-4 text-black">기부금 공개 게시판</h2>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              기부금 모집내역과 기부금 활용내역은 각각 별도 게시판 페이지에서 운영됩니다.
+              아래 메뉴를 통해 해당 게시판으로 이동하실 수 있습니다.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="fund-usage" className="scroll-mt-28 xs:scroll-mt-32 sm:scroll-mt-36 py-6 xs:py-8 sm:py-12 md:py-16 bg-[#f7f5ec]">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-4xl mx-auto rounded-2xl bg-white p-6 xs:p-8 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-extrabold mb-4 text-black">기부금 활용내역</h2>
-            <p className="text-gray-700 leading-relaxed">
-              후원금은 지역 공동체 활동, 시니어 일자리 및 창업 지원, 백운시장 연계 행사 운영 등
-              공익 목적 사업에 사용됩니다. 활용내역 역시 향후 게시판 형식으로 정리하여 투명하게
-              공개할 예정입니다.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Link
+                href="/donation/fundraising-records"
+                className="rounded-2xl bg-white p-6 shadow-sm border border-[#d9e8d9] hover:shadow-md transition-shadow duration-300"
+              >
+                <p className="text-sm font-bold text-[#2e7d32]">게시판 01</p>
+                <h3 className="mt-2 text-xl font-extrabold text-black">기부금 모집내역</h3>
+                <p className="mt-3 text-gray-700 leading-relaxed">
+                  연도별 기부금 모집 현황과 관련 공지를 게시판 형식으로 확인하실 수 있습니다.
+                </p>
+              </Link>
+              <Link
+                href="/donation/fund-usage"
+                className="rounded-2xl bg-white p-6 shadow-sm border border-[#d9e8d9] hover:shadow-md transition-shadow duration-300"
+              >
+                <p className="text-sm font-bold text-[#2e7d32]">게시판 02</p>
+                <h3 className="mt-2 text-xl font-extrabold text-black">기부금 활용내역</h3>
+                <p className="mt-3 text-gray-700 leading-relaxed">
+                  후원금 사용 목적과 집행 관련 공개 자료를 게시판 형식으로 확인하실 수 있습니다.
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
